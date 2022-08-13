@@ -62,7 +62,17 @@ namespace Nanoleaf.Client
             var layout = JsonConvert.DeserializeObject<Layout>(response);
             return layout;
         }
-
+        
+        /// <summary>
+        /// Retrieves the current global orientation.
+        /// Requires authorization.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<GlobalOrientation> GetGlobalOrientationAsync() {
+            var response = await _nanoleafHttpClient.SendGetRequest("panelLayout/globalOrientation");
+            var globalOrientation = JsonConvert.DeserializeObject<GlobalOrientation>(response);
+            return globalOrientation;
+        }
 
         #region User
 

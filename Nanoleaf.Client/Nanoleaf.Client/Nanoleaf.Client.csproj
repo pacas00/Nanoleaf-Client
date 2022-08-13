@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-    <Version>2.0.0.0</Version>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.1.0.0</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Description>A cross-platform library for Nanoleaf API.</Description>
     <PackageProjectUrl>https://github.com/BullFrog13/Nanoleaf-Client</PackageProjectUrl>
@@ -23,8 +23,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DeviceDiscovery" Version="1.0.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="DeviceDiscovery" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>

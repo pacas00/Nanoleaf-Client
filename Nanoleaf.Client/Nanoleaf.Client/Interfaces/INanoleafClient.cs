@@ -10,6 +10,21 @@ namespace Nanoleaf.Client.Interfaces
     /// </summary>
     public interface INanoleafClient : IDisposable
     {
+
+        /// <summary>
+        /// Retrieves the current panel layout.
+        /// Requires authorization.
+        /// </summary>
+        /// <returns></returns>
+        Task<Layout> GetLayoutAsync();
+
+        /// <summary>
+        /// Retrieves the current global orientation.
+        /// Requires authorization.
+        /// </summary>
+        /// <returns></returns>
+        Task<GlobalOrientation> GetGlobalOrientationAsync();
+
         /// <summary>
         /// Gets nanoleaf information.
         /// </summary>
